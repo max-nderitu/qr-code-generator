@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "qr-code-generator"
+client_id = "7732d80b4c6618557dff50ba6bd75c40"
+application_url = "https://trees-bosnia-joshua-contain.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://trees-bosnia-joshua-contain.trycloudflare.com/auth/callback",
+  "https://trees-bosnia-joshua-contain.trycloudflare.com/auth/shopify/callback",
+  "https://trees-bosnia-joshua-contain.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-3e120816.myshopify.com"
